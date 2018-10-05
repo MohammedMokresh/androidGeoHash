@@ -33,14 +33,13 @@ Add it in your root build.gradle at the end of repositories:
 # Example
 
 
-` public string getTheGeoHash(){
-  Location location = new Location("geohash");
-  location.setLatitude(53.84543);
-  location.setLongitude(86.88464);
+ 	 Location location = new Location("geohash");
+	 location.setLatitude(53.84543);
+	 location.setLongitude(86.88464);
  
-  GeoHash hash = GeoHash.fromLocation(location, 9);
-  return hash.toString(); //"vctf3472q"
-}
+ 	 GeoHash hash = GeoHash.fromLocation(location, 9);
+ 	 return hash.toString(); //"vctf3472q"
+			
 
 
 
