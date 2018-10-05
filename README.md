@@ -25,17 +25,22 @@ Add it in your root build.gradle at the end of repositories:
 
 
 **Step 2.** Add the dependency
+
 	dependencies {
 		implementation 'com.github.MohammedMokresh:androidGeoHash:v1.0'
 	}
 
 # Example
+
+
+` public string getTheGeoHash(){
   Location location = new Location("geohash");
   location.setLatitude(53.84543);
   location.setLongitude(86.88464);
  
   GeoHash hash = GeoHash.fromLocation(location, 9);
-  hash.toString(); //"vctf3472q"
+  return hash.toString(); //"vctf3472q"
+}
 
 
 
